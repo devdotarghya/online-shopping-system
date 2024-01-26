@@ -1,0 +1,10 @@
+org\arghya\app\productservice\service\ProductService.class
+org\arghya\app\productservice\model\Product$ProductBuilder.class
+org\arghya\app\productservice\controller\ProductController.class
+org\arghya\app\productservice\dto\ProductRequest.class
+org\arghya\app\productservice\dto\ProductRequest$ProductRequestBuilder.class
+org\arghya\app\productservice\ProductServiceApplication.class
+org\arghya\app\productservice\model\Product.class
+org\arghya\app\productservice\repository\ProductRepository.class
+org\arghya\app\productservice\dto\ProductResponse$ProductResponseBuilder.class
+org\arghya\app\productservice\dto\ProductResponse.class

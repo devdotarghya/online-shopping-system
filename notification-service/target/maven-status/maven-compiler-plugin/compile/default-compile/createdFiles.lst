@@ -1,0 +1,3 @@
+org\arghya\app\notificationservice\event\OrderPlacedEvent.class
+org\arghya\app\notificationservice\NotificationServiceApplication.class
+org\arghya\app\notificationservice\service\NotificationService.class

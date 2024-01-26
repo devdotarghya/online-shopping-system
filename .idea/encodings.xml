@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="Encoding" addBOMForNewFiles="with NO BOM">
+    <file url="file://$PROJECT_DIR$" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/api-gateway" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/inventory-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/notification-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/order-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/product-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/service-discovery-server" charset="UTF-8" />
+    <file url="file://D:/order-service/order-service" charset="UTF-8" />
+  </component>
+</project>
