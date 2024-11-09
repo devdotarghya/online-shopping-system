@@ -46,36 +46,36 @@ services:
 #      - ./mongo-data:/data/db
 
   #Keycloak Mysql Docker Compose config
-#  keycloak-mysql:
-#    container_name: keycloak-mysql
-#    image: mysql:5.7.38
-#    volumes:
-#      - ./mysql-keycloak-data:/var/lib/mysql
-#    environment:
-#      MYSQL_ROOT_PASSWORD: root
-#      MYSQL_DATABASE: keycloak
-#      MYSQL_USER: keycloak
-#      MYSQL_PASSWORD: password
+  keycloak-mysql:
+    container_name: keycloak-mysql
+    image: mysql:5.7.38
+    volumes:
+      - ./mysql-keycloak-data:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: keycloak
+      MYSQL_USER: keycloak
+      MYSQL_PASSWORD: password
 
   #Keycloak Docker Compose config
-#  keycloak:
-#    container_name: keycloak
-#    image: quay.io/keycloak/keycloak:18.0.0
-#    command: ["start-dev", "--import-realm"]
-#    environment:
-#      DB_VENDOR: MYSQL
-#      DB_ADDR: mysql
-#      DB_DATABASE: keycloak
-#      DB_USER: keycloak
-#      DB_PSSWORD: password
-#      KEYCLOAK_ADMIN: admin
-#      KEYCLOAK_ADMIN_PASSWORD: admin
-#    ports:
-#      - "8080:8080"
-#    volumes:
-#      - ./realms/:/opt/keycloak/data/import/
-#    depends_on:
-#      - keycloak-mysql
+  keycloak:
+    container_name: keycloak
+    image: quay.io/keycloak/keycloak:18.0.0
+    command: ["start-dev", "--import-realm"]
+    environment:
+      DB_VENDOR: MYSQL
+      DB_ADDR: mysql
+      DB_DATABASE: keycloak
+      DB_USER: keycloak
+      DB_PSSWORD: password
+      KEYCLOAK_ADMIN: admin
+      KEYCLOAK_ADMIN_PASSWORD: admin
+    ports:
+      - "8081:8080"
+    volumes:
+      - ./realms/:/opt/keycloak/data/import/
+    depends_on:
+      - keycloak-mysql
 
   #Zipkin Docker Compose config
   zipkin:
