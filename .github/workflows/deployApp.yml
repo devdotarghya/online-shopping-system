@@ -1,7 +1,7 @@
 name: AWS EKS CICD
 on:
   push:
-    branches: [main]
+    branches: [master]
 #env:
 #  tableName: 'weather'
 #  lambdaFunctionName: 'weather-lambda'
