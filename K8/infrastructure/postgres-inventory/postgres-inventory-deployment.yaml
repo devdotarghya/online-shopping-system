@@ -24,7 +24,7 @@ spec:
               value: inventory_password
             - name: POSTGRES_USER
               value: inventory_user
-          image: postgres
+          image: postgres:16-bullseye
           name: postgres-inventory
           ports:
             - containerPort: 5432

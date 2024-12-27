@@ -29,7 +29,7 @@ spec:
               value: order_password
             - name: POSTGRES_USER
               value: order_user
-          image: postgres
+          image: postgres:16-bullseye
           name: postgres-order
           ports:
             - containerPort: 5431
