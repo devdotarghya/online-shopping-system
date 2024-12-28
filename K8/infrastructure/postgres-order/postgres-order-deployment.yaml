@@ -68,6 +68,7 @@ metadata:
     app: postgres-order-claim0
   name: postgres-order-claim0
 spec:
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:

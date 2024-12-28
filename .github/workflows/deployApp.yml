@@ -50,6 +50,7 @@ jobs:
       - name: Create cluster
         id: createCluster
         run: eksctl create cluster --name online-shopping-cluster-1 --region us-east-1
+        continue-on-error: true
       - name: Deploy application
         id: deploy
         run: |

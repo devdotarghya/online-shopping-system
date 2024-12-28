@@ -56,6 +56,7 @@ metadata:
     app: mongo-claim0
   name: mongo-claim0
 spec:
+  storageClassName: manual
   accessModes:
     - ReadWriteOnce
   resources:
