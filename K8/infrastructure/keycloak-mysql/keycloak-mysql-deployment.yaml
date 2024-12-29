@@ -47,7 +47,7 @@ metadata:
     app: keycloak-mysql-claim0
   name: keycloak-mysql-claim0
 spec:
-  storageClassName: manual
+  storageClassName: standard
   accessModes:
     - ReadWriteOnce
   resources:
