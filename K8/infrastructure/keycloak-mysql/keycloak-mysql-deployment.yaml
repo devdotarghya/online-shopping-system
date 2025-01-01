@@ -47,10 +47,23 @@ metadata:
     app: keycloak-mysql-claim0
   name: keycloak-mysql-claim0
 spec:
-  storageClassName: standard
   accessModes:
     - ReadWriteOnce
   resources:
     requests:
       storage: 100Mi
 status: {}
+#---
+#apiVersion: v1
+#kind: PersistentVolume
+#metadata:
+#  creationTimestamp: null
+#  labels:
+#    app: keycloak-mysql-pv
+#  name: keycloak-mysql-pv
+#spec:
+#  accessModes:
+#    - ReadWriteOnce
+#  capacity:
+#    storage: 100Mi
+#status: {}
