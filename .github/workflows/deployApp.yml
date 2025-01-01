@@ -57,17 +57,5 @@ jobs:
       - name: Deploy application
         id: deploy
         run: |
-#          kubectl apply -f ./K8/infrastructure/mongodb/mongo-deployment.yaml
-#          kubectl apply -f ./K8/infrastructure/postgres-order/postgres-order-deployment.yaml
-#          kubectl apply -f ./K8/infrastructure/postgres-inventory/postgres-inventory-deployment.yaml
           kubectl apply -f ./K8/infrastructure/keycloak-mysql/keycloak-mysql-deployment.yaml
           kubectl apply -f ./K8/infrastructure/keycloak/keycloak-deployment.yaml
-#          kubectl apply -f ./K8/infrastructure/zipkin/zipkin-deployment.yaml
-#          kubectl apply -f ./K8/infrastructure/zookeeper/zookeeper-deployment.yaml
-#          kubectl apply -f ./K8/infrastructure/kafka/broker-deployment.yaml
-#          kubectl apply -f ./K8/infrastructure/discovery-server/service-discovery-server-deployment.yaml
-#          kubectl apply -f ./K8/infrastructure/api-gateway/api-gateway-deployment.yaml
-#          kubectl apply -f ./K8/services/product-service/product-service-deployment.yaml
-#          kubectl apply -f ./K8/services/order-service/order-service-deployment.yaml
-#          kubectl apply -f ./K8/services/inventory-service/inventory-service-deployment.yaml
-#          kubectl apply -f ./K8/services/notification-service/notification-service-deployment.yaml
