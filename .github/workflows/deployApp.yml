@@ -49,11 +49,11 @@ jobs:
         run: eksctl version
       - name: Create cluster
         id: createCluster
-        run: eksctl create cluster --name online-shopping-cluster-1 --region us-east-1
+        run: eksctl create cluster --name online-shopping-cluster-2 --region us-east-1
         continue-on-error: true
       - name: Update K8 config
         id: updateKubeConfig
-        run: aws eks update-kubeconfig --name online-shopping-cluster-1 --region us-east-1
+        run: aws eks update-kubeconfig --name online-shopping-cluster-2 --region us-east-1
       - name: Deploy application
         id: deploy
         run: |
